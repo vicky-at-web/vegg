@@ -24,11 +24,16 @@
         #form {
             display: flex;
             justify-content: center;
+            height: auto;
+            
         }
 
         form {
-            height: 650px;
-            width: 800px;
+          
+            
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-around; */
             padding: 30px;
             border: 1px solid black;
             margin: 20px;
@@ -130,9 +135,9 @@
             </div>
         </div>
     </div>
-    <div class='container-fluid'>
-        <div id="form">
-            <form class='container-fluid'>
+    <div class="container-fluid">
+        <div id="form" class="d-flex row flex-grow container-fluid" >
+            <form >
                 <div class="row mb-3">
                     <label for="item" class="col-sm-2 col-form-label">Item Name:</label>
                     <div class="col-sm-10">
@@ -187,8 +192,7 @@
                 <button type="submit" id="btn" class="btn btn-primary">Add product</button>
             </form>
         </div>
-</div>
-  
+    </div>
 
 
     <script src="index.js"></script>
